@@ -1,0 +1,73 @@
+{
+    "workbench.iconTheme": "vscode-icons-mac",
+    "files.autoSave": "afterDelay",
+    "window.zoomLevel": 0,
+    "editor.mouseWheelZoom": true,
+    "workbench.colorTheme": "Dracula Soft",
+    "editor.wordWrap": "on",
+    "java.debug.settings.exceptionBreakpoint.skipClasses": [
+    
+    ],
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.fontFamily": "Dank Mono",
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.codeLensFontFamily": "Dank Mono",
+    "editor.inlineHints.fontFamily": "Dank Mono",
+    "editor.semanticTokenColorCustomizations": null,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    //following will be in italic (=FlottFlott)
+                    "comment",
+                    "entity.name.type.class", //class names
+                    "keyword", //import, export, return…
+                    "constant", //String, Number, Boolean…, this, super
+                    "storage.modifier", //static keyword
+                    "storage.type.class.js", //class keyword
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    //following will be excluded from italics (VSCode has some defaults for italics)
+                    "invalid",
+                    "keyword.operator",
+                    "constant.numeric.css",
+                    "keyword.other.unit.px.css",
+                    "constant.numeric.decimal.js",
+                    "constant.numeric.json"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    "editor.fontLigatures": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "terminal.integrated.automationShell.windows": "C:\\cmder\\Cmder.exe",
+    "terminal.integrated.env.windows": {
+
+    },
+    "terminal.integrated.defaultProfile.osx": "",
+    "terminal.integrated.profiles.windows": {
+        "cmder": {
+          "path": "C:\\WINDOWS\\System32\\cmd.exe",
+          "args": ["/K", "C:\\cmder\\vendor\\bin\\vscode_init.cmd"]
+        },
+        "anaconda": {
+            "path": "C:\\Windows\\System32\\cmd.exe",
+            "args": ["/K", "C:\\Users\\som\\anaconda3\\Scripts\\activate.bat C:\\Users\\som\\anaconda3"]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "anaconda",
+    
+}
